@@ -1,0 +1,21 @@
+mongodb:
+  uri: mongodb://mongouser:mongopass@localhost:27017
+
+micronaut:
+  application:
+    name: controller
+  server:
+    port: 8090
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+        descriptions: true
+        step: PT1M
+    enabled: true
+
+endpoints:
+  prometheus:
+    sensitive: false
+
+kafka.bootstrap.servers: localhost:29092
