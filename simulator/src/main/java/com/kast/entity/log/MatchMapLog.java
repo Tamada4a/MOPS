@@ -5,10 +5,12 @@ import com.kast.entity.log.enums.Guns;
 import com.kast.entity.log.enums.LogSide;
 import com.kast.entity.log.enums.LogType;
 import com.kast.entity.log.enums.RoundWonBy;
+import io.micronaut.serde.annotation.Serdeable;
 
 /**
  * @author Kirill "Tamada" Simovin
  */
+@Serdeable
 public class MatchMapLog {
     /**
      * Тип лога:
